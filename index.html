@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resmin İçine Veri Saklama</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <div class="wrapper">
+    <h1>Resmin İçine Veri Saklama</h1>
+    <hr>
+
+    <div class="tab">
+      <div class="tab__headers">
+        <div data-name="one" class="active">🖐</div>
+        <div data-name="two">Veri Sakla</div>
+        <div data-name="three">Saklı Veriyi Oku</div>
+      </div>
+  
+      <div class="tab__bodies">
+        <div data-parent="one" class="active">
+          <p>Selam, ben Murat ŞAHİN 🖐</p>
+          <p>Bu uygulamayı kullanarak bir resmin içerisine, ilgili resmin piksel sayısı kadar karakter saklayabilirsiniz</p>
+        </div>
+        
+        <div data-parent="two">
+          <p><input type="file" id="write-input"></p>
+          <p style="overflow-x: auto;text-align: center;"><img src="" alt="" id="write-image"></p>
+          <p><textarea spellcheck="false" id="write-area" placeholder="Saklanacak veriyi girin ..."></textarea></p>
+          <p><button href="" id="write-button">Resmi Kaydet</button></p>
+        </div>
+
+        <div data-parent="three">
+          <p><input type="file" id="read-input"></p>
+          <p style="overflow-y: auto;text-align: center;"><img src="" alt="" id="read-image"></p>
+          <p><textarea readonly id="read-area" placeholder="Saklı veri burada görünecek ..."></textarea></p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  
+  <script src="js/RGBAC.js"></script>
+  <script src="js/script.js"></script>
+
+</body>
+</html>
